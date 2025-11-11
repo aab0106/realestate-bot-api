@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+module.exports = (req, res) => {
   const properties = [
     { id: 1, title: "Luxury 3-Bed in DHA", area: "DHA", price: "PKR 18,500,000", size: "1500 sqft" },
     { id: 2, title: "Corner House – Garden View", area: "Gulberg", price: "PKR 25,000,000", size: "2200 sqft" },
@@ -6,4 +6,4 @@ export default function handler(req, res) {
   ];
 
   res.status(200).json(properties);
-}
+};
